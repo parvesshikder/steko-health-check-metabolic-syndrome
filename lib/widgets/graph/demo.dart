@@ -49,10 +49,12 @@ class TasksPage extends StatelessWidget {
                 decoration: const InputDecoration(hintText: "Enter task"),
               )),
               // ignore: deprecated_member_use
-              FlatButton(
+              ElevatedButton(
                 child:
                     const Text("Save", style: TextStyle(color: Colors.white)),
-                color: Colors.blue,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                ),
                 onPressed: () {
                   _saveTask();
                 },

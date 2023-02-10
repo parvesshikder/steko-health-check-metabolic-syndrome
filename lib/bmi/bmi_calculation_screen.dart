@@ -25,7 +25,7 @@ class _BMICalculatorState extends State<BMICalculator> {
                   color: Colors.red,
                 )),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                 child: const Text('Ok'),
                 onPressed: () {
                   Navigator.pop(context);
@@ -147,7 +147,7 @@ class _BMICalculatorState extends State<BMICalculator> {
                       ),
                     ),
                   ),
-                ),
+                ), 
                 const SizedBox(
                   height: 10.0,
                 ),

@@ -16,7 +16,7 @@ class PopUp {
               ),
             ),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                 child: const Text('Ok'),
                 onPressed: () {
                   Navigator.pop(context);
@@ -40,7 +40,7 @@ class PopUp {
               ),
             ),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                 child: const Text('Ok'),
                 onPressed: () {
                   Navigator.pop(context);

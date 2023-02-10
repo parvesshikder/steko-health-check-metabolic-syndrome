@@ -44,7 +44,7 @@ class _HealthStatusScreenState extends State<HealthStatusScreen> {
                   color: Colors.green,
                 )),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                 child: const Text('Ok'),
                 onPressed: () {
                   Navigator.pop(context);
@@ -66,7 +66,7 @@ class _HealthStatusScreenState extends State<HealthStatusScreen> {
                   color: Colors.red,
                 )),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                 child: const Text('Ok'),
                 onPressed: () {
                   Navigator.pop(context);

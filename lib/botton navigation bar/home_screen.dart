@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:steko_health_checker/constraints.dart';
 import '../custom route/slide_right_route.dart';
 import '../health status/health_status_update_screen.dart';
+import '../metabolic syndrome/metabolic_syndrome.dart';
 import '../widgets/blc_card.dart';
 import '../widgets/bmi_overview.dart';
 import '../widgets/home/hero_section_home_page.dart';
@@ -93,6 +94,48 @@ class _HomeScreenState extends State<HomeScreen> {
                                       },
                                       child: const Text(
                                         'Start',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 20.0,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(16.0),
+                                color: const Color(0xFFD9EAD3).withOpacity(0.7),
+                              ),
+                              height: 57.0,
+                              padding: const EdgeInsets.all(12),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  const Text('Self-Diagnose Metabolic Syndrome'),
+                                  Container(
+                                    width: 80,
+                                    height: 35,
+                                    decoration: BoxDecoration(
+                                      gradient: kYelloGradientColor,
+                                      borderRadius: BorderRadius.circular(50),
+                                    ),
+                                    child: TextButton(
+                                      onPressed: () {
+                                        Navigator.push(
+                                          context,
+                                          SlideRightRoute(
+                                            page: const MetabolicSyndrome(),
+                                          ),
+                                        );
+                                      },
+                                      child: const Text(
+                                        'Test',
                                         style: TextStyle(
                                           color: Colors.white,
                                         ),

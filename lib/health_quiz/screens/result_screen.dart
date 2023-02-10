@@ -63,7 +63,7 @@ class _ResultScreenState extends State<ResultScreen> {
             const SizedBox(
               height: 100.0,
             ),
-            FlatButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(
                     context,
@@ -71,8 +71,12 @@ class _ResultScreenState extends State<ResultScreen> {
                       builder: (context) => const QuizzScreen(),
                     ));
               },
-              color: AppColor.secondaryColor,
-              padding: const EdgeInsets.all(18.0),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColor.secondaryColor,
+                  padding: const EdgeInsets.all(18.0),
+                ),
+               
+              
               child: const Text(
                 "Reapeat the quizz",
                 style: TextStyle(color: Colors.amberAccent),
@@ -81,7 +85,7 @@ class _ResultScreenState extends State<ResultScreen> {
             const SizedBox(
               height: 20.0,
             ),
-            FlatButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.push(
                     context,
@@ -89,8 +93,10 @@ class _ResultScreenState extends State<ResultScreen> {
                       builder: (context) => const MainPage(),
                     ));
               },
-              color: AppColor.secondaryColor,
-              padding: const EdgeInsets.all(18.0),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColor.secondaryColor,
+                  padding: const EdgeInsets.all(18.0),
+                ),
               child: const Text(
                 "Back To Home",
                 style: TextStyle(color: Colors.black87),

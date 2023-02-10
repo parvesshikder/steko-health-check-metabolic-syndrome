@@ -140,7 +140,7 @@ class _CaloriesIntakeState extends State<CaloriesIntake> {
                   color: Colors.green,
                 )),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                 child: const Text('Ok'),
                 onPressed: () {
                   setState(() {
@@ -165,7 +165,7 @@ class _CaloriesIntakeState extends State<CaloriesIntake> {
                   color: Colors.red,
                 )),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                 child: const Text('Ok'),
                 onPressed: () {
                   Navigator.pop(context);
